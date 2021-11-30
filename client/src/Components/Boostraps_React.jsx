@@ -1,11 +1,13 @@
 import React from 'react'
+import { Button } from 'react-bootstrap';
 
-
-export const Bt = () => {
+const Bt = () => {
 
     return (
         <>
-            <Button variant="primary">Enviar información</Button>{' '}
+            <Button variant="primary">Enviar información</Button>
         </>
     )
 }
+
+export default Bt;
