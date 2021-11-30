@@ -1,8 +1,9 @@
 import React from 'react'
-import './Styles/Formulario_Operaciones.css'
+import Bt from './Boostraps_React'
+// import './Styles/Formulario_Operaciones.css'
 
 
-export const Formulario_Operaciones = () => {
+export const FormularioOperaciones = () => {
 
     return (
 
@@ -44,11 +45,12 @@ export const Formulario_Operaciones = () => {
                                     </div>
                                 </div>
 
-                                {/* <div class="form-group">
+                                <div class="form-group">
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Enviar información</button>
+                                        <Bt />
+                                        {/* <button type="submit" class="btn btn-primary btn-lg">Enviar información</button> */}
                                     </div>
-                                </div> */}
+                                </div>
                             </fieldset>
                         </form>
                     </div>
