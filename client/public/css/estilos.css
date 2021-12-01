@@ -1,0 +1,58 @@
+html{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#formRegistro{
+    border-radius: 20px;
+    color: #999;
+    font-size: 0.8em;
+    padding: 20px;
+    margin: 0 auto;
+    width: 270px;
+    height: 390px;
+    background-color: #eef1fb;
+}
+
+input, textarea{
+    border: 0;
+    outline: none;
+    width: 250px;
+    background-color: #e4eaf8;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.field{
+    padding: 10px;
+}
+
+.field:focus{
+    border-color: #443ad1;
+}
+
+
+.btn{
+	border-radius: 5px;
+	display: inline-block;
+	padding: 7px 7px;
+    width: 150px;
+	text-decoration: none;
+	position: absolute;
+    top: 72%;
+    left: 46%;
+    margin: -25px 0 0 -25px;
+}
+
+.btn-green{
+	color: white;
+	background-color: #5689ec;
+}
+.btn-green:hover{
+	background-color: #447be9;	
+}
+
+.campo {
+    color: black;
+}
