@@ -1,0 +1,69 @@
+#btn{
+    position: relative;
+    left: 20px;
+}
+
+#tb{
+    position: relative;
+    top: 30px;
+}
+
+.table{
+    position: relative;
+    padding: 10px;    
+}
+
+.table-responsive{
+    border-radius: 20px;
+    color: rgb(3, 3, 3);
+    font-size: 0.9em;
+    padding: 20px;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    background-color: #eef1fb;
+    position: absolute;
+    top: 72%;
+    left: 30%;
+    margin: -25px 0 0 -25px;
+}
+
+.btnmeta{
+	border-radius: 5px;
+    border: 0;
+	display: inline-block;
+	padding: 7px 7px;
+    width: 150px;
+	text-decoration: none;
+	position: absolute;
+    top: 90%;
+    left: 20%;
+    margin: -25px 0 0 -25px;
+}
+
+.btnmetac{
+	border-radius: 5px;
+    border: 0;
+	display: inline-block;
+	padding: 7px 7px;
+    width: 180px;
+	text-decoration: none;
+	position: absolute;
+    top: 90%;
+    left: 60%;
+    margin: -25px 0 0 -25px;
+}
+
+.btnmetaahorro{
+	color: white;
+	background-color: #5689ec;
+}
+
+.btnmetaahorroc{
+	color: rgb(8, 1, 1);
+	background-color: #ced9f1;
+}
+
+.btnmetaahorro:hover{
+	background-color: #447be9;	
+}
