@@ -33,7 +33,7 @@ const estaMiMetaCumplida = () =>{
     balance = parseInt(localStorage.getItem('balance'));
     metaAhorro = parseInt(localStorage.getItem('metaAhorro'));
 
-    if(metaAhorro > balance){
+    if(metaAhorro < balance){
        return 'cumple';
     }else{
         return 'no cumple';
