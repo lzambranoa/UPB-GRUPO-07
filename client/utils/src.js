@@ -1,6 +1,8 @@
 let operaciones = [];
 let balance = 0;
 
+let metaAhorro = 0;
+
 const registrarOperacion = (monto, tipo, categoria, fecha) => {
     const obj = {monto, tipo, categoria, fecha}
     operaciones.push(obj);
@@ -21,5 +23,25 @@ const registrarOperacion = (monto, tipo, categoria, fecha) => {
 }
 
 
+const registrarMetaAhorro = (meta) => {
+    
+    // Almacena en el local storage el valor de la meta de ahorro
+    localStorage.setItem('metaAhorro', meta);
+}
+
+const estaMiMetaCumplida = () =>{
+    balance = parseInt(localStorage.getItem('balance'));
+    metaAhorro = parseInt(localStorage.getItem('metaAhorro'));
+
+    if(metaAhorro < balance){
+       return 'cumple';
+    }else{
+        return 'no cumple';
+    }
+}
 
 module.exports.registrarOperacion = registrarOperacion;
+
+module.exports.registrarMetaAhorro = registrarMetaAhorro;
+
+module.exports.estaMiMetaCumplida = estaMiMetaCumplida;
