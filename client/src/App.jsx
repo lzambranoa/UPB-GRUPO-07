@@ -1,15 +1,15 @@
 import React from 'react'
-import { Bt } from './Components/Boostraps_React'
-import { Formulario_Operaciones } from './Components/Formulario_Operaciones'
+import { FormularioOperaciones } from './Components/FormularioOperaciones'
 import './Styles/Formulario_Operaciones.css'
 
 
-export const App = () => {
+const App = () => {
 
     return (
         <>
-            <Formulario_Operaciones />
-            <Bt />
+            <FormularioOperaciones />
         </>
     )
 }
+
+export default App;
