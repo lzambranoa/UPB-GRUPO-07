@@ -1,7 +1,6 @@
 let operaciones = [];
 let balance = 0;
 
-let metaAhorro = 0;
 
 const registrarOperacion = (monto, tipo, categoria, fecha) => {
     const obj = {monto, tipo, categoria, fecha}
@@ -40,8 +39,7 @@ const estaMiMetaCumplida = () =>{
     }
 }
 
-module.exports.registrarOperacion = registrarOperacion;
-
 module.exports.registrarMetaAhorro = registrarMetaAhorro;
-
+module.exports.registrarOperacion = registrarOperacion;
 module.exports.estaMiMetaCumplida = estaMiMetaCumplida;
+
