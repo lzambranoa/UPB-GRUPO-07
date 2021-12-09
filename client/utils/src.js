@@ -67,6 +67,14 @@ const registrarOperacion = async (monto, tipo, categoria, fecha) => {
     return response.json();
 }
 
+const estaMiMetaCumplida = async (meta)=>{
+
+    let response = await fetch(
+    `https://misiontic2022upb.vercel.app/api/personal-finance/is-my-goal-achieved/4000`);
+        let finanza = await response.json();
+        return finanza; 
+}
+
 
 module.exports.registrarMetaAhorro = registrarMetaAhorro;
 module.exports.registrarOperacion = registrarOperacion;
