@@ -67,7 +67,17 @@ const registrarOperacion = async (monto, tipo, categoria, fecha) => {
     return response.json();
 }
 
+//HU-09 - Monto de operaciones de ingreso
 
+
+const valorDeIngreso = async () => {
+
+    let response = await fetch(`https://misiontic2022upb.vercel.app/api/personal-finance/operations`)
+        .then(operacionesRegistradas => response.json())
+    return operacionesRegistradas
+}
+
+module.exports.valorDeIngreso = valorDeIngreso;
 module.exports.registrarMetaAhorro = registrarMetaAhorro;
 module.exports.registrarOperacion = registrarOperacion;
 module.exports.estaMiMetaCumplida = estaMiMetaCumplida;
