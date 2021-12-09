@@ -75,7 +75,21 @@ const estaMiMetaCumplida = async (meta)=>{
         return finanza; 
 }
 
+const valorDeIngresos = async() =>{
+
+	let response = await fetch(`https://misiontic2022upb.vercel.app/api/personal-finance/operations`);
+	const operacionesRegistradas = await response.json();
+    let total = 0;
+  
+    const itemFiltrado = operacionesRegistradas.forEach(item => {
+        if(item.tipo == 'ingreso')
+            total += item.monto
+        
+    });
+    return total
+};
 
 module.exports.registrarMetaAhorro = registrarMetaAhorro;
 module.exports.registrarOperacion = registrarOperacion;
 module.exports.estaMiMetaCumplida = estaMiMetaCumplida;
+module.exports.valorDeIngresos= valorDeIngresos;
