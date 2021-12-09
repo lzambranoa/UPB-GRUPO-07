@@ -2,7 +2,7 @@ let operaciones = [];
 let balance = 0;
 
 
-/*const registrarOperacion = (monto, tipo, categoria, fecha) => {
+const registrarOperacion = (monto, tipo, categoria, fecha) => {
     const obj = {
         monto,
         tipo,
@@ -24,7 +24,7 @@ let balance = 0;
     }
     // Almacena en el local storage el valor del balance
     localStorage.setItem('balance', balance);
-}*/
+}
 
 
 const registrarMetaAhorro = (meta) => {
@@ -33,7 +33,7 @@ const registrarMetaAhorro = (meta) => {
     localStorage.setItem('metaAhorro', meta);
 }
 
-/*const estaMiMetaCumplida = () => {
+const estaMiMetaCumplida = () => {
     balance = parseInt(localStorage.getItem('balance'));
     metaAhorro = parseInt(localStorage.getItem('metaAhorro'));
 
@@ -42,7 +42,7 @@ const registrarMetaAhorro = (meta) => {
     } else {
         return 'no cumple';
     }
-}*/
+}
 
 
 // HU-05 - Añadir operaciones enviándolas a la API
